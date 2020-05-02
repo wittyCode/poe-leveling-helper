@@ -39,6 +39,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.core:jackson-databind:2.9.10.3")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.7")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.0")
+	implementation("com.opencsv:opencsv:5.0")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")

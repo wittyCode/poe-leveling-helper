@@ -1,5 +1,6 @@
 package com.wittycode.poelevelinghelper
 
+import com.wittycode.poelevelinghelper.gemimport.services.GemImporter
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication

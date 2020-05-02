@@ -10,38 +10,39 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 @JsonIgnoreProperties(ignoreUnknown = true)
 class PoBContent {
         @set:JacksonXmlProperty(localName = "Build")
-        var build: Build? = null
-
+        lateinit var build: Build
 
         @set:JacksonXmlProperty(localName = "Skills")
-        var skills: Skills? = null
+        lateinit var skills: Skills
 }
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Build {
-        @set:JacksonXmlProperty(isAttribute = true, localName = "bandit")
-        var bandit: String = ""
+        @set:JacksonXmlProperty(isAttribute = true)
+        lateinit var bandit: String
+        @set:JacksonXmlProperty(isAttribute = true)
+        lateinit var className: String
 }
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Skills {
         @set:[JacksonXmlElementWrapper(useWrapping = false) JacksonXmlProperty(localName = "Skill")]
-        var skills: List<Skill?>? = null
+        lateinit var skills: List<Skill?>
 }
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Skill {
-        @set:JacksonXmlProperty(isAttribute = true, localName = "label")
-        var label: String = ""
+        @set:JacksonXmlProperty(isAttribute = true)
+        lateinit var label: String
 
         @set:[JacksonXmlElementWrapper(useWrapping = false) JacksonXmlProperty(localName = "Gem")]
-        var gems: List<Gem?>? = null
+        lateinit var gems: List<Gem?>
 }
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Gem {
         @set:JacksonXmlProperty(isAttribute = true, localName = "nameSpec")
-        var name: String = ""
+        lateinit var name: String
 }

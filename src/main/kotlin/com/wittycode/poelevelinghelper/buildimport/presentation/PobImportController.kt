@@ -4,7 +4,8 @@ import com.fasterxml.jackson.core.JsonParseException
 import com.fasterxml.jackson.databind.JsonMappingException
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.wittycode.poelevelinghelper.buildimport.model.PoBContent
-import com.wittycode.poelevelinghelper.buildimport.services.domain.PobToXmlConverter
+import com.wittycode.poelevelinghelper.buildimport.services.PobToXmlConverter
+import com.wittycode.poelevelinghelper.gemimport.services.GemImporter
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
@@ -14,7 +15,11 @@ import java.io.IOException
 
 
 @RestController
-class PobImportController(private val restTemplate: RestTemplate, private val pobToXmlConverter: PobToXmlConverter) {
+class PobImportController(
+        private val restTemplate: RestTemplate,
+        private val pobToXmlConverter: PobToXmlConverter,
+        private val gemImporter: GemImporter
+) {
 
     private val logger = LoggerFactory.getLogger(PobImportController::class.java)
 
