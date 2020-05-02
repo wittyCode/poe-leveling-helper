@@ -24,4 +24,8 @@ class GemInfoAccessor(private val gemImporter: GemImporter) {
         val gemsByClass = gemImporter.gemInfos.filter { it.isAvailableForClass(classNameToCheck) }
         return gemsByClass.toSet()
     }
+
+    fun getGemInfoByQuestName(questName: String): Set<GemInfo> =
+            gemImporter.gemInfos.filter { it.isAvailableForQuest(questName) }.toSet()
+
 }

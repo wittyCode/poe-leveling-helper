@@ -1,0 +1,28 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "content": "Kill Hillock",
+      "quest": "Enemy at The Gate"
+    },
+    {
+      "step": 2,
+      "content": "Grab Coast waypoint, go to Mud Flats"
+    },
+    {
+      "step": 3,
+      "content": "In Mudflats get 3 eggs and go to Submerged Passage, grab waypoint",
+      "quest": "Breaking some Eggs"
+    },
+    {
+      "step": 4,
+      "content": "Go to Coast Waypoint, head to Tidal Island and kill Hailrake",
+      "quest": "Mercy Mission"
+    },
+    {
+      "step": 5,
+      "content": "Dummy",
+      "quest": "Fallen from Grace"
+    }
+  ]
+}

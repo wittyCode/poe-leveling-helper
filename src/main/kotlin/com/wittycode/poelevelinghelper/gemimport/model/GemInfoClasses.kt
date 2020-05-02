@@ -14,14 +14,18 @@ enum class AvailableClasses {
 data class GemInfo(
         var gemName: String?,
         var vendor: String?,
-        var questUnlock: String?,
+        // default is Act 6 Lilly quest which unlocks all gems
+        var questUnlock: String = "Fallen from Grace",
         var classUnlocks: MutableSet<AvailableClasses> = mutableSetOf()
 ) {
     constructor(gemName: String):
         this(gemName, "", "")
 
-    fun isAvailableForClass(className: String) :Boolean =
+    fun isAvailableForClass(className: String): Boolean =
         classUnlocks.map { it.name }.contains(className.toUpperCase())
+
+    fun isAvailableForQuest(questName: String): Boolean =
+        questUnlock.toUpperCase() == questName.toUpperCase()
 
 }
 

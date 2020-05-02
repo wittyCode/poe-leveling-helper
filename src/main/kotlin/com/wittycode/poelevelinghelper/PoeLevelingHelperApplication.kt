@@ -1,6 +1,8 @@
 package com.wittycode.poelevelinghelper
 
 import com.wittycode.poelevelinghelper.gemimport.services.GemImporter
+import com.wittycode.poelevelinghelper.leveling.services.LevelingGuideImporter
+import com.wittycode.poelevelinghelper.leveling.services.QuestImporter
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -8,7 +10,11 @@ import org.springframework.context.annotation.Bean
 import org.springframework.web.client.RestTemplate
 
 @SpringBootApplication
-class PoeLevelingHelperApplication(private val gemImporter: GemImporter): CommandLineRunner {
+class PoeLevelingHelperApplication(
+		private val gemImporter: GemImporter,
+		private val questImporter: QuestImporter,
+		private val levelingGuideImporter: LevelingGuideImporter
+): CommandLineRunner {
 
 	companion object {
 		@JvmStatic
@@ -26,5 +32,7 @@ class PoeLevelingHelperApplication(private val gemImporter: GemImporter): Comman
 	@Throws(Exception::class)
 	override fun run(vararg args: String) {
 		gemImporter.importGemInfo()
+		questImporter.importQuests()
+		levelingGuideImporter.importLevelingGuide()
 	}
 }
