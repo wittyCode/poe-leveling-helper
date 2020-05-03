@@ -1,11 +1,9 @@
 package com.wittycode.poelevelinghelper.leveling.presentation
 
 import com.wittycode.poelevelinghelper.leveling.model.LevelingStep
-import com.wittycode.poelevelinghelper.leveling.model.Quest
 import com.wittycode.poelevelinghelper.leveling.model.toEntityModel
 import com.wittycode.poelevelinghelper.leveling.model.toEntityModelWithPossiblePagedRels
 import com.wittycode.poelevelinghelper.leveling.services.LevelingGuideAccessor
-import com.wittycode.poelevelinghelper.leveling.services.QuestAccessor
 import org.springframework.hateoas.CollectionModel
 import org.springframework.hateoas.EntityModel
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo
@@ -19,14 +17,8 @@ import javax.ws.rs.core.MediaType
 
 @RestController
 class LevelingController(
-        private val questAccessor: QuestAccessor,
         private val levelingGuideAccessor: LevelingGuideAccessor
 ) {
-
-    @RequestMapping("/quests", produces = [MediaType.APPLICATION_JSON])
-    fun fetchAllQuests(): Set<Quest> {
-        return questAccessor.getAllQuests()
-    }
 
     @RequestMapping("/leveling", produces = [MediaType.APPLICATION_JSON])
     fun fetchAllLeveling(): CollectionModel<EntityModel<LevelingStep>> {

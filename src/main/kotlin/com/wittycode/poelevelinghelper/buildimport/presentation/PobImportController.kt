@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import java.io.IOException
+import javax.ws.rs.core.MediaType
 
 
 @RestController
@@ -20,7 +21,7 @@ class PobImportController(
 
     private val logger = LoggerFactory.getLogger(PobImportController::class.java)
 
-    @RequestMapping("/import/pob")
+    @RequestMapping("/import/pob", produces = [MediaType.APPLICATION_JSON])
     @Throws(JsonParseException::class, JsonMappingException::class, IOException::class)
     fun importPoBFromPastebin(
             @RequestParam("pastebinurl") pasteBinUrl: String

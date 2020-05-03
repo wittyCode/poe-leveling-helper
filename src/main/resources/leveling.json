@@ -43,6 +43,31 @@
     },
     {
       "step": 10,
+      "content": "Back to Prisoner's Gate, go to Ship Graveyard, grab waypoint"
+    },
+    {
+      "step": 11,
+      "content": "Go to Ship Graveyard Cave, grab Allflame"
+    },
+    {
+      "step": 12,
+      "content": "Go to Cavern of Wrath, get waypoint, take waypoint to Ship Graveyard, kill Fairgraves"
+    },
+    {
+      "step": 13,
+      "content": "Back to town, get Skillpoint from Bestel and maybe gems from Nessa",
+      "quest": "The Siren's Cadence"
+    },
+    {
+      "step": 14,
+      "content": "Take waypoint to Cavern of Wrath, go to Cavern of Anger, exit to Merveil's Lair and kill Merveil."
+    },
+    {
+      "step": 15,
+      "content": "Exit to Act 2 and run through zone to enter the Forest Encampment."
+    },
+    {
+      "step": 16,
       "content": "Dummy",
       "quest": "Fallen from Grace"
     }

@@ -1,6 +1,6 @@
 package com.wittycode.poelevelinghelper.gemimport.model
 
-fun  Set<GemInfo>.filterForAvailableClass(availableClasses: AvailableClasses): MutableSet<GemInfo> =
+fun  MutableSet<GemInfo>.filterForAvailableClass(availableClasses: AvailableClasses): MutableSet<GemInfo> =
         this.filter { it.isAvailableForClass(availableClasses.name) }.toMutableSet()
 
 
