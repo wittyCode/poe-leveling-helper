@@ -1,74 +1,343 @@
 {
   "steps": [
     {
+      "act": 1,
       "step": 1,
-      "content": "Kill Hillock",
+      "substeps": [
+        {
+          "content": "Kill Hillock"
+        }
+      ],
       "quest": "Enemy at The Gate"
     },
     {
+      "act": 1,
       "step": 2,
-      "content": "Grab Coast waypoint, go to Mud Flats"
+      "substeps": [
+        {
+          "content": "Grab Coast waypoint, go to Mud Flats"
+        }
+      ]
     },
     {
+      "act": 1,
       "step": 3,
-      "content": "In Mudflats get 3 eggs and go to Submerged Passage, grab waypoint",
+      "substeps": [
+        {
+          "content": "In Mudflats get 3 eggs and go to Submerged Passage, grab waypoint"
+        }
+      ],
       "quest": "Breaking some Eggs"
     },
     {
+      "act": 1,
       "step": 4,
-      "content": "Go to Coast Waypoint, head to Tidal Island and kill Hailrake",
+      "substeps": [
+        {
+          "content": "Go to Coast Waypoint, head to Tidal Island and kill Hailrake"
+        }
+      ],
       "quest": "Mercy Mission"
     },
     {
+      "act": 1,
       "step": 5,
-      "content": "Back to Submerged Passage, go to the Ledge \nGrab Waypoint, go to the Climb\nGo to Lower Prison, grab Waypoint"
+      "substeps": [
+        {
+          "content": "Back to Submerged Passage, go to the Ledge"
+        },
+        {
+          "content": "Grab Waypoint, go to the Climb"
+        },
+        {
+          "content": "Go to Lower Prison, grab Waypoint"
+        }
+      ]
     },
     {
+      "act": 1,
       "step": 6,
-      "content": "Back to Submerged Passage, go to Submerged Passage kill Dweller of the Deeps"
-    },
-    {
-      "step": 7,
-      "content": "Back to town grab skillpoint",
+      "substeps": [
+        {
+          "content": "Back to Submerged Passage, go kill Dweller of the Deeps"
+        },
+        {
+          "content": "Back to town grab skillpoint"
+        }
+      ],
       "quest": "The Dweller of the Deep"
     },
     {
-      "step": 8,
-      "content": "Back to Lower Prison: \nFinish Labyrinth\nGo to Warden's Quarter then Warden's Chamber and kill Brutus"
+      "act": 1,
+      "step": 7,
+      "substeps": [
+        {
+          "content": "Take waypoint back to Lower Prison"
+        },
+        {
+          "content": "Finish Labyrinth"
+        },
+        {
+          "content": "Go to Warden's Quarter then Warden's Chamber and kill Brutus"
+        }
+      ]
     },
     {
-      "step": 9,
-      "content": "Grab Prisoner's Gate waypoint, back to town to grab gems if necessary",
+      "act": 1,
+      "step": 8,
+      "substeps": [
+        {
+          "content": "Grab Prisoner's Gate waypoint, back to town to grab gems if necessary"
+        }
+      ],
       "quest": "The Caged Brute"
     },
     {
+      "act": 1,
+      "step": 9,
+      "substeps": [
+        {
+          "content": "Back to Prisoner's Gate, go to Ship Graveyard, grab waypoint"
+        }
+      ]
+    },
+    {
+      "act": 1,
       "step": 10,
-      "content": "Back to Prisoner's Gate, go to Ship Graveyard, grab waypoint"
+      "substeps": [
+        {
+          "content": "Go to Ship Graveyard Cave, grab Allflame"
+        }
+      ]
     },
     {
+      "act": 1,
       "step": 11,
-      "content": "Go to Ship Graveyard Cave, grab Allflame"
-    },
-    {
-      "step": 12,
-      "content": "Go to Cavern of Wrath, get waypoint, take waypoint to Ship Graveyard, kill Fairgraves"
-    },
-    {
-      "step": 13,
-      "content": "Back to town, get Skillpoint from Bestel and maybe gems from Nessa",
+      "substeps": [
+        {
+          "content": "Go to Cavern of Wrath, get waypoint"
+        },
+        {
+          "content": "Take waypoint to Ship Graveyard, kill Fairgraves"
+        },
+        {
+          "content": "Back to town, get Skillpoint from Bestel and maybe gems from Nessa"
+        }
+      ],
       "quest": "The Siren's Cadence"
     },
     {
+      "act": 1,
+      "step": 12,
+      "substeps": [
+        {
+          "content": "Take waypoint to Cavern of Wrath, go to Cavern of Anger"
+        },
+        {
+          "content": "Exit to Merveil's Lair and kill Merveil."
+        }
+      ]
+    },
+    {
+      "act": 1,
+      "step": 13,
+      "substeps": [
+        {
+          "content": "Exit to Act 2 and run through zone to enter the Forest Encampment."
+        }
+      ]
+    },
+    {
+      "act": 2,
       "step": 14,
-      "content": "Take waypoint to Cavern of Wrath, go to Cavern of Anger, exit to Merveil's Lair and kill Merveil."
+      "substeps": [
+        {
+          "content": "Go right to the Old Fields"
+        },
+        {
+          "content": "Go to the Den"
+        },
+        {
+          "content": "Kill the White Beast"
+        },
+        {
+          "content": "If you want return to town for your second Quicksilver Flask"
+        }
+      ],
+      "quest": "The Great White Beast"
     },
     {
+      "act": 2,
       "step": 15,
-      "content": "Exit to Act 2 and run through zone to enter the Forest Encampment."
+      "substeps": [
+        {
+          "content": "Go right in the Old Fields to the Crossroads"
+        },
+        {
+          "content": "Get waypoint in the middle of the zone"
+        },
+        {
+          "content": "Go right to the Broken Brige"
+        },
+        {
+          "content": "Find and Kill Kraityn"
+        }
+      ]
     },
     {
+      "act": 2,
       "step": 16,
-      "content": "Dummy",
+      "substeps": [
+        {
+          "content": "Back to Crossroads and down to Fellshrine Ruins"
+        },
+        {
+          "content": "Enter the Crypt"
+        },
+        {
+          "content": "Do Trial of Ascendancy in Crypt Level 1"
+        }
+      ]
+    },
+    {
+      "act": 2,
+      "step": 17,
+      "substeps": [
+        {
+          "content": "Head left into the Riverways"
+        },
+        {
+          "content": "Grab waypoint and go up into the Wetlands"
+        }
+      ]
+    },
+    {
+      "act": 2,
+      "step": 17,
+      "substeps": [
+        {
+          "content": "Head left into the Riverways"
+        },
+        {
+          "content": "Grab waypoint and go up into the Wetlands"
+        }
+      ]
+    },
+    {
+      "act": 2,
+      "step": 17,
+      "substeps": [
+        {
+          "content": "Find and kill Oak"
+        },
+        {
+          "content": "Grab waypoint and take waypoint back to Riverways"
+        }
+      ]
+    },
+    {
+      "act": 2,
+      "step": 17,
+      "substeps": [
+        {
+          "content": "Go left into Western Forest, do the following 3 in any order"
+        },
+        {
+          "content": "Find and help/kill Alira"
+        },
+        {
+          "content": "Kill Blackguards at the and of the road. Use Thaumatic Seal to open Exit to Act 1"
+        },
+        {
+          "content": "Find the Weaver's Nest, enter and kill the Weaver"
+        }
+      ],
+      "quest": "Deal with the Bandits"
+    },
+    {
+      "act": 2,
+      "step": 18,
+      "substeps": [
+        {
+          "content": "Back to town, take waypoint to Act 1 Lioneye's Watch"
+        },
+        {
+          "content": "Get Skillpoint from Bestel"
+        }
+      ],
+      "quest": "The Way Forward"
+    },
+    {
+      "act": 2,
+      "step": 19,
+      "substeps": [
+        {
+          "content": "Back to town in Act 2, killing Weaver should have unlocked some gems from Yeena"
+        }
+      ],
+      "quest": "Sharp and Cruel"
+    },
+    {
+      "act": 2,
+      "step": 20,
+      "substeps": [
+        {
+          "content": "Take the waypoint to the Crossroads and go up into Chamber of Sins"
+        },
+        {
+          "content": "Finish your Labyrinth Trial in the Chamber of Sins level 2"
+        },
+        {
+          "content": "Find and kill Fidelitas and pick up the Baleful Gem"
+        }
+      ],
+      "quest": "Intruders in Black"
+    },
+    {
+      "act": 2,
+      "step": 21,
+      "substeps": [
+        {
+          "content": "Take the waypoint to the Wetlands"
+        },
+        {
+          "content": "Poison the Tree and enter the Vaal Ruins"
+        },
+        {
+          "content": "Go through Vaal Ruins to enter Northern Forest"
+        },
+        {
+          "content": "If you find Northern Forest waypoint go back to town and check for gems"
+        }
+      ],
+      "quest": "The Root of the Problem"
+    },
+    {
+      "act": 2,
+      "step": 22,
+      "substeps": [
+        {
+          "content": "Travel through Northern Forest, don't enter Dread Thicket"
+        },
+        {
+          "content": "Enter and run through the Caverns"
+        },
+        {
+          "content": "Ascend the Vaal pyramid and kill the Act 2 boss"
+        },
+        {
+          "content": "Exit into Act 3"
+        }
+      ]
+    },
+    {
+      "act": 6,
+      "step": 23,
+      "substeps": [
+        {
+          "content": "Dummy"
+        }
+      ],
       "quest": "Fallen from Grace"
     }
   ]

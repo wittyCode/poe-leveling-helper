@@ -8,7 +8,9 @@ data class Quest(var name: String?)
 data class LevelingGuide(var steps: Set<LevelingStep>)
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-data class LevelingStep(var step: Int, var content: String, var gems: Set<String> = mutableSetOf()) {
+data class LevelingStep(var act: Int, var step: Int, var substeps: Set<LevelingSubStep>, var gems: Set<String> = mutableSetOf()) {
 
     var quest: String? = null
 }
+
+data class LevelingSubStep(var content: String)

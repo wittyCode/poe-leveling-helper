@@ -34,7 +34,7 @@ class LevelingGuideAccessor(
         if (!this::enrichedQuestSteps.isInitialized) {
             this.enrichedQuestSteps = this.enrichLevelingStepsWithGems()
         }
-        return this.enrichedQuestSteps.groupedById()[stepId] ?: LevelingStep(-1, "")
+        return this.enrichedQuestSteps.groupedById()[stepId] ?: LevelingStep(-1, -1, emptySet())
     }
 
 }
