@@ -21,6 +21,28 @@
     },
     {
       "step": 5,
+      "content": "Back to Submerged Passage, go to the Ledge \nGrab Waypoint, go to the Climb\nGo to Lower Prison, grab Waypoint"
+    },
+    {
+      "step": 6,
+      "content": "Back to Submerged Passage, go to Submerged Passage kill Dweller of the Deeps"
+    },
+    {
+      "step": 7,
+      "content": "Back to town grab skillpoint",
+      "quest": "The Dweller of the Deep"
+    },
+    {
+      "step": 8,
+      "content": "Back to Lower Prison: \nFinish Labyrinth\nGo to Warden's Quarter then Warden's Chamber and kill Brutus"
+    },
+    {
+      "step": 9,
+      "content": "Grab Prisoner's Gate waypoint, back to town to grab gems if necessary",
+      "quest": "The Caged Brute"
+    },
+    {
+      "step": 10,
       "content": "Dummy",
       "quest": "Fallen from Grace"
     }

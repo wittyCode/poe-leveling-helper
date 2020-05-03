@@ -3,7 +3,7 @@ package com.wittycode.poelevelinghelper.leveling.presentation
 import com.wittycode.poelevelinghelper.leveling.model.LevelingStep
 import com.wittycode.poelevelinghelper.leveling.model.Quest
 import com.wittycode.poelevelinghelper.leveling.model.toEntityModel
-import com.wittycode.poelevelinghelper.leveling.model.toEntityModelWithPossibleNextRel
+import com.wittycode.poelevelinghelper.leveling.model.toEntityModelWithPossiblePagedRels
 import com.wittycode.poelevelinghelper.leveling.services.LevelingGuideAccessor
 import com.wittycode.poelevelinghelper.leveling.services.QuestAccessor
 import org.springframework.hateoas.CollectionModel
@@ -39,8 +39,8 @@ class LevelingController(
     @RequestMapping("/leveling/{stepId}", produces = [MediaType.APPLICATION_JSON])
     fun fetchLevelingStep(@PathVariable stepId: Int): ResponseEntity<EntityModel<LevelingStep>> {
         return ResponseEntity(
-                        levelingGuideAccessor.getStep(stepId)
-                                .toEntityModelWithPossibleNextRel(levelingGuideAccessor)
+                        levelingGuideAccessor.getStepById(stepId)
+                                .toEntityModelWithPossiblePagedRels(levelingGuideAccessor)
                 , HttpStatus.OK)
     }
 }

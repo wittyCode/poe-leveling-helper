@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
-import com.wittycode.poelevelinghelper.gemimport.services.GemInfoAccessor
+import com.wittycode.poelevelinghelper.gemimport.model.AvailableClasses
 
 
 @JacksonXmlRootElement(localName = "PathOfBuilding")
@@ -23,6 +23,8 @@ class Build {
         lateinit var bandit: String
         @set:JacksonXmlProperty(isAttribute = true)
         lateinit var className: String
+
+        fun getClassName(): AvailableClasses = AvailableClasses.valueOf(className.toUpperCase())
 }
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -49,13 +51,4 @@ class Gem {
 
         @set:JacksonXmlProperty(isAttribute = true)
         lateinit var questUnlock: String
-}
-
-fun List<Skill>.attachQuestUnlock(gemInfoAccessor: GemInfoAccessor) {
-        this.forEach {
-                it.gems.forEach {
-                        gem ->
-                        gem.questUnlock = gemInfoAccessor.getGemInfoByGemName(gem.name).questUnlock ?: "Act 6 Lilly"
-                }
-        }
 }

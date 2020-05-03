@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 @Service
 class GemInfoAccessor(private val gemImporter: GemImporter) {
 
-    fun getAll(): List<GemInfo> = gemImporter.gemInfos
+    fun getAll(): MutableSet<GemInfo> = gemImporter.gemInfos.toMutableSet()
 
     fun getGemInfoByGemName(gemName: String): GemInfo {
         val gemsByName = gemImporter.gemInfos.associateBy { it.gemName }
@@ -17,15 +17,11 @@ class GemInfoAccessor(private val gemImporter: GemImporter) {
         }
     }
 
-    fun getGemInfoByClassName(className: String): Set<GemInfo> {
+    fun getGemInfoByClassName(className: String): MutableSet<GemInfo> {
         val classNameToCheck = className.toUpperCase()
         if (!AvailableClasses.values().map { it.name }.contains(classNameToCheck))
-            return emptySet()
+            return mutableSetOf()
         val gemsByClass = gemImporter.gemInfos.filter { it.isAvailableForClass(classNameToCheck) }
-        return gemsByClass.toSet()
+        return gemsByClass.toMutableSet()
     }
-
-    fun getGemInfoByQuestName(questName: String): Set<GemInfo> =
-            gemImporter.gemInfos.filter { it.isAvailableForQuest(questName) }.toSet()
-
 }

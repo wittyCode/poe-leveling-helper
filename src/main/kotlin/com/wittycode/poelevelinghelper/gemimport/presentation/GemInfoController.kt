@@ -14,7 +14,7 @@ class GemInfoController(private val gemInfoAccessor: GemInfoAccessor) {
     private val logger = LoggerFactory.getLogger(GemInfoController::class.java)
 
     @RequestMapping("/gems", produces = [MediaType.APPLICATION_JSON])
-    fun fetchGemInfos(): List<GemInfo> {
+    fun fetchGemInfos(): Set<GemInfo> {
         logger.debug("Returning gem info list.")
         return gemInfoAccessor.getAll()
     }
@@ -23,7 +23,7 @@ class GemInfoController(private val gemInfoAccessor: GemInfoAccessor) {
     fun fetchGemInfoByGemName(
             @RequestParam("gemName") gemName: String
     ): GemInfo {
-        logger.debug("Returning gem info list.")
+        logger.debug("Returning gem info for gem.")
         return gemInfoAccessor.getGemInfoByGemName(gemName)
     }
 
@@ -31,7 +31,7 @@ class GemInfoController(private val gemInfoAccessor: GemInfoAccessor) {
     fun fetchGemInfoByClassName(
             @RequestParam("className") className: String
     ): Set<GemInfo> {
-        logger.debug("Returning gem info list.")
+        logger.debug("Returning gem info list for class.")
         return gemInfoAccessor.getGemInfoByClassName(className)
     }
 }

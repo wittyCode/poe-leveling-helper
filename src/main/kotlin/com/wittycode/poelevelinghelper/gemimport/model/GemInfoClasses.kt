@@ -24,8 +24,11 @@ data class GemInfo(
     fun isAvailableForClass(className: String): Boolean =
         classUnlocks.map { it.name }.contains(className.toUpperCase())
 
-    fun isAvailableForQuest(questName: String): Boolean =
-        questUnlock.toUpperCase() == questName.toUpperCase()
+    fun isAvailableForQuest(questName: String?): Boolean =
+            questUnlock.toUpperCase() == questName?.toUpperCase() ?: false
 
+    fun resetToDefaultQuest() {
+        this.questUnlock = "Fallen from Grace"
+        this.vendor = "Act 6 Lilly"
+    }
 }
-

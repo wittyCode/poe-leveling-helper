@@ -2,24 +2,20 @@ package com.wittycode.poelevelinghelper.buildimport.presentation
 
 import com.fasterxml.jackson.core.JsonParseException
 import com.fasterxml.jackson.databind.JsonMappingException
-import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.wittycode.poelevelinghelper.buildimport.model.PoBContent
-import com.wittycode.poelevelinghelper.buildimport.model.attachQuestUnlock
-import com.wittycode.poelevelinghelper.buildimport.services.PobToXmlConverter
-import com.wittycode.poelevelinghelper.gemimport.services.GemInfoAccessor
+import com.wittycode.poelevelinghelper.buildimport.services.PobBuildAccessor
+import com.wittycode.poelevelinghelper.leveling.services.LevelingGuideAccessor
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import org.springframework.web.client.RestTemplate
 import java.io.IOException
 
 
 @RestController
 class PobImportController(
-        private val restTemplate: RestTemplate,
-        private val pobToXmlConverter: PobToXmlConverter,
-        private val gemInfoAccessor: GemInfoAccessor
+        private val pobBuildAccessor: PobBuildAccessor,
+        private val levelingGuideAccessor: LevelingGuideAccessor
 ) {
 
     private val logger = LoggerFactory.getLogger(PobImportController::class.java)
@@ -29,14 +25,14 @@ class PobImportController(
     fun importPoBFromPastebin(
             @RequestParam("pastebinurl") pasteBinUrl: String
     ): PoBContent {
-        logger.info("Importing from Url {}", pasteBinUrl)
-        val rawPasteBinContent = restTemplate.getForObject(pasteBinUrl, String::class.java)
-        logger.info("Import finished, decompressing")
-        val decompressedXmlFromPasteBin: String? = pobToXmlConverter.convertPobRawToXmlString(rawPasteBinContent)
-        logger.info("Decompression finished, mapping XML")
-        val xmlMapper = XmlMapper()
-        val pobContent = xmlMapper.readValue(decompressedXmlFromPasteBin, PoBContent::class.java)
-        pobContent.skills.skills.attachQuestUnlock(gemInfoAccessor)
-        return pobContent;
+        if (!pasteBinUrl.contains("/raw/")) {
+            logger.info("provided url was not raw format, replacing path to raw pastebin")
+            val rawPasteBinUrl = pasteBinUrl.replace(".com/", ".com/raw/")
+            pobBuildAccessor.loadPobBuild(rawPasteBinUrl)
+        } else {
+            pobBuildAccessor.loadPobBuild(pasteBinUrl);
+        }
+        levelingGuideAccessor.enrichLevelingStepsWithGems()
+        return pobBuildAccessor.poBContent
     }
 }

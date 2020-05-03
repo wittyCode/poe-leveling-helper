@@ -37,7 +37,7 @@ Blast Rain,A3 Clarissa,,,,,Ranger,Duelist,Scion,Sever the Right Hand
 Blight,A1 Nessa,,Templar,Witch,Shadow,,,Scion,Enemy at the Gate
 Blind,A1 Nessa,Marauder,,,Shadow,Ranger,Duelist,Scion,The Caged Brute
 Blink Arrow,A1 Nessa,,,,Shadow,Ranger,Duelist,Scion,The Caged Brute
-Blood and Sand,A1 Nessa,Marauder,,,,Ranger,,Scion,Breaking Some Eggs
+Blood and Sand,A1 Nessa,Marauder,,,,Ranger,Duelist,Scion,Breaking Some Eggs
 Blood Magic,A3 Clarissa,Marauder,Templar,,,Ranger,Duelist,Scion,A Fixture of Fate
 Blood Rage,A2 Yeena,Marauder,,,Shadow,Ranger,Duelist,Scion,The Root of the Problem
 Bloodlust,A2 Yeena,Marauder,Templar,,Shadow,Ranger,Duelist,Scion,Sharp and Cruel
@@ -145,6 +145,7 @@ Frost Bomb,A1 Nessa,,Templar,Witch,Shadow,,,Scion,Breaking Some Eggs
 Frost Wall,A1 Nessa,,Templar,Witch,,,Duelist,,Breaking Some Eggs
 Frostbite,A3 Clarissa,,Templar,Witch,Shadow,,,Scion,Lost in Love
 Frostbolt,A1 Nessa,,Templar,Witch,Shadow,,,Scion,Enemy at the Gate
+Galvanic Arrow,A1 Nessa,,,,,Ranger,Duelist,Scion,Enemy at the Gate
 Generosity,A3 Clarissa,Marauder,Templar,Witch,,,,Scion,A Fixture of Fate
 Glacial Cascade,A3 Clarissa,,Templar,Witch,Shadow,,,,Sever the Right Hand
 Glacial Hammer,A1 Nessa,Marauder,Templar,,,,Duelist,,Enemy at the Gate
@@ -201,7 +202,7 @@ Life Leech,A3 Clarissa,Marauder,Templar,,Shadow,Ranger,Duelist,Scion,A Fixture o
 Lightning Arrow,A1 Nessa,,,,Shadow,Ranger,Duelist,,The Siren's Cadence
 Lightning Penetration,A3 Clarissa,,Templar,Witch,Shadow,,,Scion,A Fixture of Fate
 Lightning Spire Trap,A3 Clarissa,,,Witch,Shadow,,,Scion,Sever the Right Hand
-Lightning Strike,A1 Nessa,Marauder,Templar,,Shadow,Ranger,Duelist,Scion,Enemy at the Gate
+Lightning Strike,A1 Nessa,,Templar,,Shadow,Ranger,Duelist,Scion,The Siren's Cadence
 Lightning Tendrils,A1 Nessa,,Templar,Witch,Shadow,,,Scion,Enemy at the Gate
 Lightning Trap,A1 Nessa,,,Witch,Shadow,Ranger,,,The Siren's Cadence
 Lightning Warp,A1 Nessa,,Templar,Witch,Shadow,,,Scion,The Caged Brute
@@ -273,7 +274,6 @@ Shock Nova,A3 Clarissa,,Templar,Witch,Shadow,,,Scion,Sever the Right Hand
 Shockwave,A2 Yeena,,,,,,Duelist,Scion,Sharp and Cruel
 Shockwave Totem,A3 Clarissa,Marauder,Templar,Witch,,,,,Sever the Right Hand
 Shrapnel Ballista,A1 Nessa,Marauder,,,Shadow,Ranger,Duelist,Scion,Breaking Some Eggs
-Shrapnel Shot,A1 Nessa,,,,,Ranger,Duelist,Scion,Enemy at the Gate
 Siege Ballista,A1 Nessa,,,,,Ranger,Duelist,Scion,Breaking Some Eggs
 Siphoning Trap,A1 Nessa,,,Witch,Shadow,,,Scion,Enemy at the Gate
 Slower Projectiles,A3 Clarissa,,,,Shadow,Ranger,Duelist,Scion,A Fixture of Fate
@@ -288,6 +288,7 @@ Spellslinger,A3 Clarissa,,Templar,Witch,Shadow,,,Scion,Lost in Love
 Spirit Offering,A1 Nessa,,Templar,Witch,,,,Scion,The Siren's Cadence
 Split Arrow,A1 Nessa,,,,Shadow,Ranger,Duelist,Scion,Enemy at the Gate
 Static Strike,A1 Nessa,Marauder,Templar,,,Ranger,Duelist,Scion,The Siren's Cadence
+Steelskin, A1 Nessa,Marauder,Templar,,,,Duelist,Scion,Breaking Some Eggs
 Storm Brand,A1 Nessa,,Templar,Witch,,,,Scion,The Siren's Cadence
 Storm Burst,A1 Nessa,,Templar,Witch,,,,Scion,The Siren's Cadence
 Storm Call,A1 Nessa,,Templar,Witch,Shadow,,,Scion,The Siren's Cadence

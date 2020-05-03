@@ -19,14 +19,14 @@ fun Resource.parseGemsCsv(): List<GemInfo> {
 
         val gemLines = csvReader.readAll()
         for (_record in gemLines) {
-            val gemInfo = _record.gemInfoFromRecord()
+            val gemInfo = _record.gemGemInfoFromRecord()
             gemInfos.add(gemInfo)
         }
         return gemInfos
     }
 }
 
-fun Array<String>.gemInfoFromRecord(): GemInfo {
+fun Array<String>.gemGemInfoFromRecord(): GemInfo {
     val logger: Logger = LoggerFactory.getLogger(GemInfo::class.java)
     val gemInfo = GemInfo(
             this[0],
