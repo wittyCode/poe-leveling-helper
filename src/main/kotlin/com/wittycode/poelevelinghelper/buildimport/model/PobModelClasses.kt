@@ -40,7 +40,7 @@ class Skill {
         lateinit var label: String
 
         @set:[JacksonXmlElementWrapper(useWrapping = false) JacksonXmlProperty(localName = "Gem")]
-        lateinit var gems: List<Gem>
+        var gems: List<Gem> = emptyList()
 }
 
 
