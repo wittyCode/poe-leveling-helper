@@ -31,10 +31,19 @@ class LevelingGuideAccessor(
     fun maxStepId(): Int = levelingGuideImporter.levelingGuide.steps.map { it.step }.max() ?: -1
 
     fun getStepById(stepId: Int): LevelingStep {
+        initializeEnrichedQuests()
+        return this.enrichedQuestSteps.groupedById()[stepId] ?: LevelingStep(-1, -1, emptySet())
+    }
+
+    fun getStepsByAct(actId: Int): Set<LevelingStep> {
+        initializeEnrichedQuests()
+        return this.enrichedQuestSteps.filter { it.act == actId }.toSet()
+    }
+
+    private fun initializeEnrichedQuests() {
         if (!this::enrichedQuestSteps.isInitialized) {
             this.enrichedQuestSteps = this.enrichLevelingStepsWithGems()
         }
-        return this.enrichedQuestSteps.groupedById()[stepId] ?: LevelingStep(-1, -1, emptySet())
     }
 
 }

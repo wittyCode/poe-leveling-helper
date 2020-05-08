@@ -213,19 +213,7 @@
     },
     {
       "act": 2,
-      "step": 17,
-      "substeps": [
-        {
-          "content": "Head left into the Riverways"
-        },
-        {
-          "content": "Grab waypoint and go up into the Wetlands"
-        }
-      ]
-    },
-    {
-      "act": 2,
-      "step": 17,
+      "step": 18,
       "substeps": [
         {
           "content": "Find and kill Oak"
@@ -237,7 +225,7 @@
     },
     {
       "act": 2,
-      "step": 17,
+      "step": 19,
       "substeps": [
         {
           "content": "Go left into Western Forest, do the following 3 in any order"
@@ -256,7 +244,7 @@
     },
     {
       "act": 2,
-      "step": 18,
+      "step": 20,
       "substeps": [
         {
           "content": "Back to town, take waypoint to Act 1 Lioneye's Watch"
@@ -269,7 +257,7 @@
     },
     {
       "act": 2,
-      "step": 19,
+      "step": 21,
       "substeps": [
         {
           "content": "Back to town in Act 2, killing Weaver should have unlocked some gems from Yeena"
@@ -279,7 +267,7 @@
     },
     {
       "act": 2,
-      "step": 20,
+      "step": 22,
       "substeps": [
         {
           "content": "Take the waypoint to the Crossroads and go up into Chamber of Sins"
@@ -289,13 +277,26 @@
         },
         {
           "content": "Find and kill Fidelitas and pick up the Baleful Gem"
+        },
+        {
+          "content": "Go back to town for skill gems if any of your build are unlocked with the quest Intruders in Black"
         }
       ],
       "quest": "Intruders in Black"
     },
     {
       "act": 2,
-      "step": 21,
+      "step": 23,
+      "substeps": [
+        {
+          "content": "Gems from the quest The Root of the Problem are now unlocked at Yeena, check her if your build needs any"
+        }
+      ],
+      "quest": "The Root of the Problem"
+    },
+    {
+      "act": 2,
+      "step": 24,
       "substeps": [
         {
           "content": "Take the waypoint to the Wetlands"
@@ -305,16 +306,12 @@
         },
         {
           "content": "Go through Vaal Ruins to enter Northern Forest"
-        },
-        {
-          "content": "If you find Northern Forest waypoint go back to town and check for gems"
         }
-      ],
-      "quest": "The Root of the Problem"
+      ]
     },
     {
       "act": 2,
-      "step": 22,
+      "step": 25,
       "substeps": [
         {
           "content": "Travel through Northern Forest, don't enter Dread Thicket"
@@ -331,11 +328,385 @@
       ]
     },
     {
-      "act": 6,
-      "step": 23,
+      "act": 3,
+      "step": 26,
       "substeps": [
         {
-          "content": "Dummy"
+          "content": "Find the Blackguards and kill them to rescue Clarissa."
+        },
+        {
+          "content": " Make sure that you speak with Clarissa before running off."
+        },
+        {
+          "content": "Enter the Sarn Encampment. This is always found in the upper left part of the area."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 27,
+      "substeps": [
+        {
+          "content": "Exit into the Slums."
+        },
+        {
+          "content": "Find the Crematorium and grab waypoint."
+        },
+        {
+          "content": "Find the Labyrinth trial in the Crematorium and complete it."
+        },
+        {
+          "content": "Find Piety and defeat her. Grab Tolman's Bracelet"
+        },
+        {
+          "content": "Bring it to Clarissa in town to get Sewer Keys"
+        }
+      ],
+      "quest": "Lost in Love"
+    },
+    {
+      "act": 3,
+      "step": 28,
+      "substeps": [
+        {
+          "content": "Exit into the Slums again."
+        },
+        {
+          "content": "Find the Sewer graiting and enter the sewers."
+        },
+        {
+          "content": "Locate the three Platinum Busts. There is always one before the Waypoint, and two after it."
+        },
+        {
+          "content": "The Busts unlock a skillpoint so return them when you have an opportunity to go back to town."
+        },
+        {
+          "content": "Exit into the Marketplace and grab the waypoint"
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 29,
+      "substeps": [
+        {
+          "content": "Up and right of the waypoint are the Catacombs."
+        },
+        {
+          "content": "Enter and complete the Labyrinth Trial."
+        },
+        {
+          "content": "Go back to Marketplace, e.g. via logout or portal back to town and using the waypoint."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 30,
+      "substeps": [
+        {
+          "content": "Go to the Battlefront and find the waypoint around the middle of the area."
+        },
+        {
+          "content": "Down left from the waypoint is the Ribbon Spool for a quest."
+        },
+        {
+          "content": "Go to the Docks, they are usually at the upper left of the area."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 30,
+      "substeps": [
+        {
+          "content": "In the Docks go find the Thaumatic Sulphite from the Supply Container."
+        },
+        {
+          "content": "If you want look for the waypoint, otherwise log out or portal back to town."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 31,
+      "substeps": [
+        {
+          "content": "Back to Marketplace and then into Solaris Temple."
+        },
+        {
+          "content": "The entrance is north, east of the entrance to the Docks."
+        },
+        {
+          "content": "Run through Solaris Temple level 1 and 2 and talk to Dalia to finish quest."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 32,
+      "substeps": [
+        {
+          "content": "Now back to Sewers and open the passage left of the waypoint. Go to Ebony Barracks."
+        },
+        {
+          "content": "Run northwest and kill Gravicious, afterwards head west to Lunaris Temple."
+        },
+        {
+          "content": "Run through the Lunaris Temple level 2 and kill Piety for the Tower Key."
+        },
+        {
+          "content": "Go back to town to get gem rewards, if you need any for your build."
+        },
+        {
+          "content": "There is also a skill point reward at Grigor."
+        }
+      ],
+      "quest": "Sever the Right Hand"
+    },
+    {
+      "act": 3,
+      "step": 33,
+      "substeps": [
+        {
+          "content": "Back to The Ebony Barracks and head east to the Imperial Gardens."
+        },
+        {
+          "content": "In the Imperial Gardens follow the road until you find the waypoint"
+        },
+        {
+          "content": "From the waypoint take to path upwards to enter the Library if you need gems from the quest there."
+        },
+        {
+          "content": "In the Library find the loose Candle to enter the Archives."
+        },
+        {
+          "content": "In the Archives find the 4 Golden Pages and bring them to Siosa to unlock him as a gem vendor."
+        }
+      ],
+      "quest": "A Fixture of Fate"
+    },
+    {
+      "act": 3,
+      "step": 34,
+      "substeps": [
+        {
+          "content": "Back to Imperial Gardens and finish your Lab Trial in the upper right of the area."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 35,
+      "substeps": [
+        {
+          "content": "Go do your Lab now since it will make fighting Dominus much easier."
+        }
+      ]
+    },
+    {
+      "act": 3,
+      "step": 36,
+      "substeps": [
+        {
+          "content": "Back to Imperial Gardens and take the right path to the Scepter of God."
+        },
+        {
+          "content": "Ascend the Scepter of God until you reach the roof. Kill Dominus"
+        },
+        {
+          "content": "Exit to Act 4"
+        }
+      ]
+    },
+    {
+      "act": 4,
+      "step": 37,
+      "substeps": [
+        {
+          "content": "Travel through the Aqueduct until you enter Highgate."
+        }
+      ]
+    },
+    {
+      "act": 4,
+      "step": 38,
+      "substeps": [
+        {
+          "content": "Enter the town and go left to the Dried Lake."
+        },
+        {
+          "content": "Kill Voll (and get the attack/cast speed crafting recipe)"
+        },
+        {
+          "content": "Unlocking the mines unlocks some skill gems after talking to Oyun"
+        },
+        {
+          "content": "Enter the mine after"
+        }
+      ],
+      "quest": "Breaking The Seal"
+    },
+    {
+      "act": 4,
+      "step": 39,
+      "substeps": [
+        {
+          "content": "Consider doing your first Delve after hitting sulphite to get the 2-3 Socket Recipe from the first Delve Node."
+        }
+      ]
+    },
+    {
+      "act": 4,
+      "step": 40,
+      "substeps": [
+        {
+          "content": "In the mines level 2 find Deshret's Spirit and release it for a skill point in town."
+        }
+      ]
+    },
+    {
+      "act": 4,
+      "step": 41,
+      "substeps": [
+        {
+          "content": "Travel through the Crystal Veins to the waypoint, then complete both side areas in any order."
+        },
+        {
+          "content": "After both are completed, new gems are unlocked in town."
+        }
+      ],
+      "quest": "The Eternal Nightmare"
+    },
+    {
+      "act": 4,
+      "step": 42,
+      "substeps": [
+        {
+          "content": "Enter the Belly of the Beast and travel through level 1 and 2."
+        },
+        {
+          "content": "Continue to the Bowels of the Beast and defeat Piety."
+        },
+        {
+          "content": "Enter The Harvest and get the waypoint."
+        }
+      ]
+    },
+    {
+      "act": 4,
+      "step": 43,
+      "substeps": [
+        {
+          "content": "In The Harvest go in a circle and kill the 3 bosses to get the organs"
+        },
+        {
+          "content": "Enter The Black Core when you have all 3 organs."
+        },
+        {
+          "content": "Kill Malachai and get back to Highgate."
+        }
+      ]
+    },
+    {
+      "act": 4,
+      "step": 44,
+      "substeps": [
+        {
+          "content": "From Town exit to The Ascent in the upper right part of town"
+        },
+        {
+          "content": "Travel through The Ascent and interact with the resonator."
+        },
+        {
+          "content": "Take the Oriath Portal to exit into Act 5."
+        }
+      ]
+    },
+    {
+      "act": 5,
+      "step": 45,
+      "substeps": [
+        {
+          "content": "Travel through the Slave Pens and kill Overseer Crow"
+        },
+        {
+          "content": "Ascend the ladder that drops after killing the Overseer and enter the Overseer's Tower."
+        }
+      ]
+    },
+    {
+      "act": 5,
+      "step": 46,
+      "substeps": [
+        {
+          "content": "Head through the Control Blocks and grab the Miasmeter in the top left."
+        },
+        {
+          "content": "Make your way up and right to the entrance to Oriath Square."
+        },
+        {
+          "content": "On your way there kill Justicar Casticus and take the Eyes of Zeal."
+        },
+      ]
+    },
+    {
+      "act": 5,
+      "step": 47,
+      "substeps": [
+        {
+          "content": "Run north east/east to the Templar Courts and get the waypoint."
+        },
+        {
+          "content": "Return to town to get an Onslaught Flask."
+        }
+      ]
+    },
+    {
+      "act": 5,
+      "step": 48,
+      "substeps": [
+        {
+          "content": "Head back to Templar Courts and run in a clockwise circle to The Chamber of Innocence."
+        },
+        {
+          "content": "Run in a counter clockwise circle to kill the boss (grab the movement speed recipe on the way)."
+        }
+      ]
+    },
+    {
+      "act": 5,
+      "step": 49,
+      "substeps": [
+        {
+          "content": "Head back through the Torched Courts after the fight to the Ruined Square."
+        },
+        {
+          "content": "Here grab the Reliquary items to the south of the Square."
+        },
+        {
+          "content": "Fetch the Sign of Purity from The Ossuary to the north-west."
+        }
+      ]
+    },
+    {
+      "act": 5,
+      "step": 50,
+      "substeps": [
+        {
+          "content": "Head to town - update your flasks turn in your quest rewards (nothing important other than skill points)."
+        },
+        {
+          "content": "Head to The Cathedral Rooftop to kill Kitava. You will suffer a permanent -30 resist penalty."
+        }
+      ]
+    },
+    {
+      "act": 6,
+      "step": 51,
+      "substeps": [
+        {
+          "content": "First clear the Twilight Strand left of town to unlock Lilly as gem vendor for all gems"
         }
       ],
       "quest": "Fallen from Grace"

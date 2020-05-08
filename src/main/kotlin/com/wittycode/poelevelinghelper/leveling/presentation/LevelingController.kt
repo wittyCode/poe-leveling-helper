@@ -28,11 +28,19 @@ class LevelingController(
         )
     }
 
-    @RequestMapping("/leveling/{stepId}", produces = [MediaType.APPLICATION_JSON])
+    @RequestMapping("/leveling/quest/{stepId}", produces = [MediaType.APPLICATION_JSON])
     fun fetchLevelingStep(@PathVariable stepId: Int): ResponseEntity<EntityModel<LevelingStep>> {
         return ResponseEntity(
                         levelingGuideAccessor.getStepById(stepId)
                                 .toEntityModelWithPossiblePagedRels(levelingGuideAccessor)
                 , HttpStatus.OK)
+    }
+
+    @RequestMapping("/leveling/act/{actId}", produces = [MediaType.APPLICATION_JSON])
+    fun fetchLevelingStepsForAct(@PathVariable actId: Int): CollectionModel<EntityModel<LevelingStep>> {
+        return CollectionModel(
+                levelingGuideAccessor.getStepsByAct(actId).map{ it.toEntityModel() },
+                linkTo(methodOn(LevelingController::class.java).fetchAllLeveling()).withSelfRel()
+        )
     }
 }

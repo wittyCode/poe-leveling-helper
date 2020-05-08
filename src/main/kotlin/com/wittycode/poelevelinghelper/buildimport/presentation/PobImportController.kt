@@ -26,6 +26,7 @@ class PobImportController(
     fun importPoBFromPastebin(
             @RequestParam("pastebinurl") pasteBinUrl: String
     ): PoBContent {
+        // TODO move to separate class to better encapsulate business logic
         if (!pasteBinUrl.contains("/raw/")) {
             logger.info("provided url was not raw format, replacing path to raw pastebin")
             val rawPasteBinUrl = pasteBinUrl.replace(".com/", ".com/raw/")
